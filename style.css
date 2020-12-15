@@ -1,0 +1,124 @@
+* , *::before , *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Padauk', sans-serif;
+}
+header{
+    display: flex;
+    width: 80%;
+   align-items: center;
+    height: 10vh;
+    margin: auto;
+}
+.logo-container , .nav-links , .owl {
+    display: flex;
+}
+.logo-container {
+    flex: 1;
+}
+.logo{
+    margin: 5px;
+}
+nav{
+    flex: 2;
+} 
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    color: #16697a;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.owl{
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.presentation{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 60vh;
+    align-items: center;
+
+}
+.introduction{
+    flex: 1;
+}
+.intro-text h1 {
+    font-size: 40px;
+    background: linear-gradient(to right , #394867 , #9ba4b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+    font-size:19px ;
+    margin-top: 5px ;
+    color: #14274e;
+}
+.big-img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    height: 80%;
+}
+.mid-img{
+    position: absolute;
+    top: 30%;
+    right: 27%;
+    z-index: -1;
+    opacity: 0.4;
+    height: 60%;
+}
+.calculator-grid{
+    flex: 1;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,95px);
+    grid-template-rows: minmax(100px,auto) repeat(5,95px);
+}
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2em;
+    border: 1px solid white;
+    background-color: #eeeeee;
+    outline: none;
+    opacity: 0.9;
+}
+.calculator-grid > button:hover{
+    background-color: rgb(255, 255, 255);
+
+    
+}
+.span-two{
+    grid-column: span 2 ;
+}
+.output{
+    grid-column:  1 / -1;
+    background-color: #222831;
+    display: flex ;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .previous-operand {
+    font-size: 1.5em;
+    color: white;
+}
+.output .current-operand {
+    font-size: 2.5em;
+    color: #ffd369;
+}
