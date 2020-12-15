@@ -43,11 +43,11 @@ class Calculator {
             case '-':
                 computation=prev - curn 
             break
-            case '*':
-                computation=prev * curn 
-            break
             case '÷':
                 computation=prev / curn 
+            break
+            case '*':
+                computation=prev * curn 
             break
             default :
              return
